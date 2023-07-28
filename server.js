@@ -15,7 +15,7 @@ server.use(express.json());
 server.use(routes);
 
 server.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
+  res.send("<h1>Welcome to employee registration CRUD app using MEAN</h1>");
 });
 
 server.listen(4000, () => {
