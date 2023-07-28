@@ -14,7 +14,11 @@ server.use(cors());
 server.use(express.json());
 server.use(routes);
 
-server.listen(8000, () => {
+server.get("/", (req, res) => {
+  res.send("<h1>Welcome to ecommerce app</h1>");
+});
+
+server.listen(4000, () => {
   try {
     console.log("Server Running in development mode on port 8000".bgCyan.white);
   } catch (error) {
